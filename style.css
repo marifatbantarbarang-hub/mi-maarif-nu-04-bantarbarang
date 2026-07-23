@@ -65,13 +65,20 @@ footer{
     margin-top:40px;
 }
 .hero{
-    background:linear-gradient(rgba(0,120,60,.7),rgba(0,120,60,.7)),
+    hero{
+    background:linear-gradient(rgba(0,120,60,.55),rgba(0,120,60,.55)),
     url("https://images.unsplash.com/photo-1509062522246-3755977927d7");
     background-size:cover;
     background-position:center;
-    color:white;
+    background-repeat:no-repeat;
+    height:550px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
     text-align:center;
-    padding:120px 20px;
+    color:white;
+}
 }
 
 .hero h1{
