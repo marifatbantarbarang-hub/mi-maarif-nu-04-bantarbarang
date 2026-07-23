@@ -82,6 +82,33 @@ footer{
 }
 
 .hero h1{
+    .hero h1{
+    color:white;
+    font-size:58px;
+    text-shadow:2px 2px 8px black;
+}
+
+.hero h2{
+    color:white;
+    font-size:34px;
+    text-shadow:2px 2px 8px black;
+}
+
+.hero p{
+    color:white;
+    font-size:22px;
+    text-shadow:2px 2px 8px black;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    background:white;
+    color:#009245;
+    padding:15px 35px;
+    border-radius:40px;
+    font-weight:bold;
+}
     font-size:48px;
     margin:10px 0;
 }
