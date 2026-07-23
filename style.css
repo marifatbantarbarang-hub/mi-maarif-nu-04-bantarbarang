@@ -64,3 +64,35 @@ footer{
     padding:25px;
     margin-top:40px;
 }
+.hero{
+    background:linear-gradient(rgba(0,120,60,.7),rgba(0,120,60,.7)),
+    url("https://images.unsplash.com/photo-1509062522246-3755977927d7");
+    background-size:cover;
+    background-position:center;
+    color:white;
+    text-align:center;
+    padding:120px 20px;
+}
+
+.hero h1{
+    font-size:48px;
+    margin:10px 0;
+}
+
+.hero h2{
+    font-size:28px;
+}
+
+.hero p{
+    font-size:20px;
+    margin-bottom:30px;
+}
+
+.btn{
+    background:white;
+    color:#0b8a3d;
+    padding:12px 30px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+}
