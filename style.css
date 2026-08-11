@@ -257,4 +257,30 @@ footer {
     .gallery {
         grid-template-columns: 1fr !important;
     }
+/* PERBAIKAN GALERI */
+.gallery {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 20px !important;
+    width: 100% !important;
+}
+
+.gallery-item {
+    grid-column: auto !important;
+    grid-row: auto !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+}
+
+.gallery-item img {
+    width: 100% !important;
+    height: 180px !important;
+    object-fit: cover !important;
+}
+
+.gallery-placeholder {
+    width: 100% !important;
+    height: 180px !important;
+    box-sizing: border-box !important;
 }
