@@ -222,3 +222,52 @@ footer {
         margin: 25px auto;
     }
 }
+/* PERBAIKAN GALERI */
+.gallery {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 20px !important;
+    width: 100% !important;
+    height: auto !important;
+}
+
+.gallery > .gallery-item {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 0 12px 0 !important;
+    overflow: hidden !important;
+    display: block !important;
+    box-sizing: border-box !important;
+}
+
+.gallery > .gallery-item img {
+    display: block !important;
+    width: 100% !important;
+    height: 180px !important;
+    max-width: 100% !important;
+    object-fit: cover !important;
+    margin: 0 !important;
+}
+
+.gallery > .gallery-item p {
+    margin: 12px 5px 0 !important;
+    padding: 0 !important;
+    text-align: center !important;
+}
+
+.gallery-placeholder {
+    width: 100% !important;
+    height: 180px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-sizing: border-box !important;
+}
+
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: 1fr !important;
+    }
+}
