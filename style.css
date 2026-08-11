@@ -209,19 +209,6 @@ footer {
 
 /* HP KECIL */
 @media (max-width: 480px) {
-
-    .galeri-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .galeri-item img {
-        height: 220px;
-    }
-
-    section {
-        margin: 25px auto;
-    }
-}
 /* PERBAIKAN GALERI */
 .gallery {
     display: grid !important;
