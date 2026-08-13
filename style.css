@@ -284,3 +284,16 @@ footer {
     height: 180px !important;
     box-sizing: border-box !important;
 }
+/* PERBAIKAN GALERI */
+.gallery {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 20px !important;
+}
+
+.gallery .gallery-item {
+    grid-column: auto !important;
+    grid-row: auto !important;
+    width: auto !important;
+    min-width: 0 !important;
+}
