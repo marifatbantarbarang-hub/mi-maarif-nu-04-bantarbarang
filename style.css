@@ -209,7 +209,6 @@ footer {
 
 /* HP KECIL */
 @media (max-width: 480px) {
-/* PERBAIKAN GALERI */
 .gallery {
     display: grid !important;
     grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
@@ -217,7 +216,6 @@ footer {
     width: 100% !important;
     height: auto !important;
 }
-
 .gallery > .gallery-item {
     width: 100% !important;
     height: auto !important;
@@ -228,7 +226,6 @@ footer {
     display: block !important;
     box-sizing: border-box !important;
 }
-
 .gallery > .gallery-item img {
     display: block !important;
     width: 100% !important;
@@ -257,7 +254,6 @@ footer {
     .gallery {
         grid-template-columns: 1fr !important;
     }
-/* PERBAIKAN GALERI */
 .gallery {
     display: grid !important;
     grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
