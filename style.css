@@ -348,3 +348,62 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+/* =========================
+   GURU & WALI KELAS
+   ========================= */
+
+.section-intro {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 30px;
+    line-height: 1.7;
+    color: #555;
+}
+
+.guru-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.guru-card {
+    background: #ffffff;
+    padding: 28px 20px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    border-top: 5px solid #087f3f;
+    transition: 0.3s ease;
+}
+
+.guru-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+}
+
+.guru-icon {
+    font-size: 45px;
+    margin-bottom: 12px;
+}
+
+.guru-card h3 {
+    color: #087f3f;
+    margin: 8px 0;
+    font-size: 20px;
+}
+
+.guru-card p {
+    margin: 0;
+    color: #666;
+    font-weight: 600;
+}
+
+/* Tampilan HP */
+@media (max-width: 768px) {
+
+    .guru-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
