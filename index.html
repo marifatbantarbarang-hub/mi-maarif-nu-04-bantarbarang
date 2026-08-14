@@ -613,16 +613,25 @@ z-index:10001;">
          style="max-width:95%; max-height:90%;
                 object-fit:contain; border-radius:12px;
                 box-shadow:0 10px 40px rgba(0,0,0,0.5);"
-         onclick="event.stopPropagation();"> <button onclick="nextImage(event)"
-style="position:absolute; right:20px; top:50%;
+         onclick="event.stopPropagation();"> 
+    <button type="button"
+onclick="previousImage(event)"
+style="position:fixed;
+left:30px;
+top:50%;
 transform:translateY(-50%);
-background:rgba(255,255,255,0.2);
-color:white; border:none;
+z-index:999999;
+width:60px;
+height:60px;
+border:none;
 border-radius:50%;
-width:50px; height:50px;
-font-size:28px; cursor:pointer;
-z-index:10001;">
-❯
+background:rgba(255,255,255,0.35);
+color:white;
+font-size:32px;
+font-weight:bold;
+cursor:pointer;
+pointer-events:auto;">
+❮
 </button>
 </div>
 
