@@ -300,3 +300,51 @@ footer {
     width: auto !important;
     min-width: 0 !important;
 }
+/* =========================
+   VISI & MISI MADRASAH
+   ========================= */
+
+.visi-misi {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.visi-box,
+.misi-box {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    border-left: 5px solid #087f3f;
+}
+
+.visi-box h3,
+.misi-box h3 {
+    margin-top: 0;
+    color: #087f3f;
+    font-size: 24px;
+}
+
+.visi-box p {
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+
+.misi-box ul {
+    margin: 0;
+    padding-left: 22px;
+}
+
+.misi-box li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+/* Tampilan HP */
+@media (max-width: 768px) {
+    .visi-misi {
+        grid-template-columns: 1fr;
+    }
+}
