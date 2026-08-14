@@ -596,20 +596,93 @@
                  color:white; font-size:40px; cursor:pointer;">
         &times;
     </span>
-
+<button onclick="previousImage(event)"
+style="position:absolute; left:20px; top:50%;
+transform:translateY(-50%);
+background:rgba(255,255,255,0.2);
+color:white; border:none;
+border-radius:50%;
+width:50px; height:50px;
+font-size:28px; cursor:pointer;
+z-index:10001;">
+❮
+</button>
     <img id="lightbox-img"
          src=""
          alt="Foto Galeri"
          style="max-width:95%; max-height:90%;
                 object-fit:contain; border-radius:12px;
                 box-shadow:0 10px 40px rgba(0,0,0,0.5);"
-         onclick="event.stopPropagation();">
+         onclick="event.stopPropagation();"> <button onclick="nextImage(event)"
+style="position:absolute; right:20px; top:50%;
+transform:translateY(-50%);
+background:rgba(255,255,255,0.2);
+color:white; border:none;
+border-radius:50%;
+width:50px; height:50px;
+font-size:28px; cursor:pointer;
+z-index:10001;">
+❯
+</button>
 </div>
 
 <script>
+const galleryImages = [
+    "gedung-madrasa.jpg",
+    "kegiatan-keagamaan.jpg",
+    "kegiatan-pembelajaran.jpg",
+    "prestasi-madrasah.jpg",
+    "upacara-apel.jpg",
+    "kegiatan-ekstrakurikuler.jpg"
+];
+
+let currentImage = 0;
+
 function openLightbox(src) {
-    document.getElementById("lightbox-img").src = src;
+    currentImage = galleryImages.indexOf(src);
+
+    if (currentImage === -1) {
+        currentImage = 0;
+    }
+
+    showImage();
     document.getElementById("lightbox").style.display = "flex";
+}
+
+function showImage() {
+    document.getElementById("lightbox-img").src =
+        galleryImages[currentImage];
+
+    const counter = document.getElementById("lightbox-counter");
+
+    if (counter) {
+        counter.textContent =
+            (currentImage + 1) + " / " + galleryImages.length;
+    }
+}
+
+function nextImage(event) {
+    if (event) event.stopPropagation();
+
+    currentImage++;
+
+    if (currentImage >= galleryImages.length) {
+        currentImage = 0;
+    }
+
+    showImage();
+}
+
+function previousImage(event) {
+    if (event) event.stopPropagation();
+
+    currentImage--;
+
+    if (currentImage < 0) {
+        currentImage = galleryImages.length - 1;
+    }
+
+    showImage();
 }
 
 function closeLightbox() {
