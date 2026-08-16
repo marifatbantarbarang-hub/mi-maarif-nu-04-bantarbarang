@@ -407,3 +407,55 @@ footer {
     }
 
 }
+/* =========================
+   KONTAK MADRASAH
+   ========================= */
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.contact-card {
+    background: #ffffff;
+    padding: 28px 22px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    border-top: 5px solid #087f3f;
+    transition: 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+}
+
+.contact-icon {
+    font-size: 42px;
+    margin-bottom: 12px;
+}
+
+.contact-card h3 {
+    color: #087f3f;
+    margin: 8px 0 15px;
+    font-size: 20px;
+}
+
+.contact-card p {
+    color: #555;
+    line-height: 1.7;
+    margin: 0;
+    word-break: break-word;
+}
+
+/* Tampilan HP */
+@media (max-width: 768px) {
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
